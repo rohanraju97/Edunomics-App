@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>Edunomics Assignment</h1>
+
+
+<br>
+
+<p>Accoriding to the Assignment, I am supposed to map two columns based on similarity.</p>
+<p>That is, given a Distributor Item Code, the app is supposed to find the relevant Company Description.</p>
+
+<form action="/" method="post">
+  <label>Enter The Distributor Item Code Here:</label>
+  <input type="text" id="DIC">
+  <button id="valBtn" type="button" onclick = "takeInput()">Get Value</button>
+</form>
+
+<p id="output"></p>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
+
+
+
+
+<!-- <h1>Hello World!</h1>
+We are using node <script>
+  document.write(process.versions.node)
+</script>,
+Chrome <script>
+  document.write(process.versions.chrome)
+</script>,
+and Electron <script>
+  document.write(process.versions.electron)
+</script>. -->
